@@ -1,0 +1,775 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		018E1682A6010C92A210B4CB7A121FDF /* Magnetic-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 60B1A1A095078B34635E1C35ED6600BC /* Magnetic-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0A113A2FC5F91269AB55DF9FA683015F /* Floaty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78FABC0A154E6DE8D7F88BB7C2EF5A88 /* Floaty.swift */; };
+		0BA63FDB18CF101D13CF53F979EE8AC6 /* Pods-ToDue2-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0759BFEEB3C78708252DF178E82C9A4B /* Pods-ToDue2-dummy.m */; };
+		1982E7ED9231E948A558799362FEA8B3 /* Floaty-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CC6008988C1FB669BBD944F5B690D0A /* Floaty-dummy.m */; };
+		2F30735E6BB3BB6DD455904BE0452769 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
+		31DEB9C293D974C0014F52E7853C3E0B /* FloatyItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4C9C8BB96D8027C5B74995A0DA7B58F /* FloatyItem.swift */; };
+		46512417EC2D8A2F6C1ABEC131A4C7B5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
+		48AFB18AC816315252144BDEE627BF46 /* SKMultilineLabelNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = A940D19B157BC16FEAE8F0EC95A68FA0 /* SKMultilineLabelNode.swift */; };
+		530356FC11C4F4A1F641A30F65C5684F /* FloatyWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA9A7AC1583E00967173A4456F14A4D /* FloatyWindow.swift */; };
+		57EBEC2C89EF1F76A9A9CC3B1533E1E8 /* Magnetic-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CA04EB2F08E994FE513C23341846AC6 /* Magnetic-dummy.m */; };
+		5C41A18C5A9C76B193A432CAA5BBC2F4 /* Pods-ToDue2-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 69A959E97955EB83520679CA2E9BA550 /* Pods-ToDue2-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6CB20C105B6D8DB5FA51EBC228C44DBD /* Magnetic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E6333FF0EB029BB2F07FEC64CF68D5B /* Magnetic.swift */; };
+		6DE51C7806F321C18C9E0FE0DB0DCABC /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F8D4B105715A14A0CC0C654EF5FFCC /* Extensions.swift */; };
+		7060C75B128119AE663619DCED898CF8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B63C6A64CF66340668996F78DA6BB482 /* UIKit.framework */; };
+		7067387FF3974A5BA87F204F718C33F5 /* Floaty-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C19CEEB4251E9D5790DC1BB948BF8E5B /* Floaty-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8E96697B51D3FD3DB5EB1BE3EF02B411 /* FloatyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D020434D8380EDA961C57FD53BC0B42D /* FloatyManager.swift */; };
+		9054A1CA64F47D0BEE3744D146CD26A2 /* FloatyDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D96AD310FC572D70BF938B69B6372A0 /* FloatyDelegate.swift */; };
+		A7D67162186709548E5BF09A8FD28644 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
+		C4F165BC3C052A909071246584397C5A /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = 400EB2D7EF1EEC36910D3616C3EF5696 /* Node.swift */; };
+		F5B4C3EE44C285ACF24E077895435175 /* FloatyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 059B79EFD6CFD6D63F6A72B5959E4695 /* FloatyViewController.swift */; };
+		F762C77EDE8A9017227183859B0F268A /* MagneticView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E34B0E0186BBDE5C19D4B369ADD4F81 /* MagneticView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3069C29AA4C008751FF9ADBAC02B010F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5C123A74CD9D6CDA27160800BA68B01A;
+			remoteInfo = Floaty;
+		};
+		A8921B252653E7A3CAC276513DC3E3BE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5748CBD6628E5BED81C1A3FF982B380B;
+			remoteInfo = Magnetic;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		03E91F169967BBCD111B8B2F3EFA735E /* Pods-ToDue2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ToDue2.release.xcconfig"; sourceTree = "<group>"; };
+		059B79EFD6CFD6D63F6A72B5959E4695 /* FloatyViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FloatyViewController.swift; path = Sources/FloatyViewController.swift; sourceTree = "<group>"; };
+		0759BFEEB3C78708252DF178E82C9A4B /* Pods-ToDue2-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ToDue2-dummy.m"; sourceTree = "<group>"; };
+		118D724C5954C6AA0FB4F99A714EA151 /* Magnetic.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Magnetic.framework; path = Magnetic.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2CA04EB2F08E994FE513C23341846AC6 /* Magnetic-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Magnetic-dummy.m"; sourceTree = "<group>"; };
+		2E34B0E0186BBDE5C19D4B369ADD4F81 /* MagneticView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MagneticView.swift; path = Sources/MagneticView.swift; sourceTree = "<group>"; };
+		3680C3E49B942F2B4E50525E4C473454 /* Pods-ToDue2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ToDue2.debug.xcconfig"; sourceTree = "<group>"; };
+		400EB2D7EF1EEC36910D3616C3EF5696 /* Node.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Node.swift; path = Sources/Node.swift; sourceTree = "<group>"; };
+		45FB6A225778CCC94B1BEA50E85FC7E5 /* Magnetic.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Magnetic.xcconfig; sourceTree = "<group>"; };
+		46F8D4B105715A14A0CC0C654EF5FFCC /* Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Extensions.swift; path = Sources/Extensions.swift; sourceTree = "<group>"; };
+		4A34969E817B70465A5E946010D62D6A /* Floaty.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Floaty.framework; path = Floaty.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		60B1A1A095078B34635E1C35ED6600BC /* Magnetic-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Magnetic-umbrella.h"; sourceTree = "<group>"; };
+		60C8BB1D12C4171982232E21BE35F3F0 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		69A959E97955EB83520679CA2E9BA550 /* Pods-ToDue2-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ToDue2-umbrella.h"; sourceTree = "<group>"; };
+		78FABC0A154E6DE8D7F88BB7C2EF5A88 /* Floaty.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Floaty.swift; path = Sources/Floaty.swift; sourceTree = "<group>"; };
+		7A682D15C924969D83024F1E2D39B57B /* Floaty-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Floaty-prefix.pch"; sourceTree = "<group>"; };
+		7D898A74E9D1ED092A6A0DF84473628A /* Pods-ToDue2-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ToDue2-acknowledgements.plist"; sourceTree = "<group>"; };
+		7D96AD310FC572D70BF938B69B6372A0 /* FloatyDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FloatyDelegate.swift; path = Sources/FloatyDelegate.swift; sourceTree = "<group>"; };
+		7E6333FF0EB029BB2F07FEC64CF68D5B /* Magnetic.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Magnetic.swift; path = Sources/Magnetic.swift; sourceTree = "<group>"; };
+		89DACD00AE93878511622C3C56C0A007 /* Magnetic.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Magnetic.modulemap; sourceTree = "<group>"; };
+		8DA9A7AC1583E00967173A4456F14A4D /* FloatyWindow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FloatyWindow.swift; path = Sources/FloatyWindow.swift; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9B225208C62812AA89E6C10922E5DD75 /* Magnetic-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Magnetic-prefix.pch"; sourceTree = "<group>"; };
+		9CC6008988C1FB669BBD944F5B690D0A /* Floaty-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Floaty-dummy.m"; sourceTree = "<group>"; };
+		A940D19B157BC16FEAE8F0EC95A68FA0 /* SKMultilineLabelNode.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SKMultilineLabelNode.swift; path = Sources/SKMultilineLabelNode.swift; sourceTree = "<group>"; };
+		B2C674C303C452B3E0A3B265045E66F8 /* Pods-ToDue2-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ToDue2-acknowledgements.markdown"; sourceTree = "<group>"; };
+		B63C6A64CF66340668996F78DA6BB482 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		BE8DB54942104DFDB31865CEFD2E2794 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BFD4BFAEB037531F1CDCF314E38B1CC3 /* Pods_ToDue2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ToDue2.framework; path = "Pods-ToDue2.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C19CEEB4251E9D5790DC1BB948BF8E5B /* Floaty-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Floaty-umbrella.h"; sourceTree = "<group>"; };
+		C49DF9E4BE782C1EEA879F7380559478 /* Floaty.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Floaty.modulemap; sourceTree = "<group>"; };
+		C90BE9CFDD934C4760DC3BB0FDCECD11 /* Pods-ToDue2.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ToDue2.modulemap"; sourceTree = "<group>"; };
+		CA466FC7A9D67AD0E682D8C87F8E6D7F /* Pods-ToDue2-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ToDue2-resources.sh"; sourceTree = "<group>"; };
+		D020434D8380EDA961C57FD53BC0B42D /* FloatyManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FloatyManager.swift; path = Sources/FloatyManager.swift; sourceTree = "<group>"; };
+		D4C9C8BB96D8027C5B74995A0DA7B58F /* FloatyItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FloatyItem.swift; path = Sources/FloatyItem.swift; sourceTree = "<group>"; };
+		D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		D94D57C24C2003C597B26F4B11FD6E40 /* Pods-ToDue2-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ToDue2-frameworks.sh"; sourceTree = "<group>"; };
+		DBD1ED5280E4F736D4946393CB2DF629 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E3262DC143D164698A79D22D046E0096 /* Floaty.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Floaty.xcconfig; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2574C9F350D56F2E1DBB2F38F791E5AA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A7D67162186709548E5BF09A8FD28644 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		34B56CFA05CEC10062E7220F638C2579 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46512417EC2D8A2F6C1ABEC131A4C7B5 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E91D449C74F3A7565170694D645F1052 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F30735E6BB3BB6DD455904BE0452769 /* Foundation.framework in Frameworks */,
+				7060C75B128119AE663619DCED898CF8 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0E1E773866199CC309956CF9B63C69DE /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				C49DF9E4BE782C1EEA879F7380559478 /* Floaty.modulemap */,
+				E3262DC143D164698A79D22D046E0096 /* Floaty.xcconfig */,
+				9CC6008988C1FB669BBD944F5B690D0A /* Floaty-dummy.m */,
+				7A682D15C924969D83024F1E2D39B57B /* Floaty-prefix.pch */,
+				C19CEEB4251E9D5790DC1BB948BF8E5B /* Floaty-umbrella.h */,
+				BE8DB54942104DFDB31865CEFD2E2794 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Floaty";
+			sourceTree = "<group>";
+		};
+		0F1B081C5BE1A6597511371419A53225 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				1D4FDC8E632DF56D0CA4628FF4273D1C /* Pods-ToDue2 */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		1D4FDC8E632DF56D0CA4628FF4273D1C /* Pods-ToDue2 */ = {
+			isa = PBXGroup;
+			children = (
+				DBD1ED5280E4F736D4946393CB2DF629 /* Info.plist */,
+				C90BE9CFDD934C4760DC3BB0FDCECD11 /* Pods-ToDue2.modulemap */,
+				B2C674C303C452B3E0A3B265045E66F8 /* Pods-ToDue2-acknowledgements.markdown */,
+				7D898A74E9D1ED092A6A0DF84473628A /* Pods-ToDue2-acknowledgements.plist */,
+				0759BFEEB3C78708252DF178E82C9A4B /* Pods-ToDue2-dummy.m */,
+				D94D57C24C2003C597B26F4B11FD6E40 /* Pods-ToDue2-frameworks.sh */,
+				CA466FC7A9D67AD0E682D8C87F8E6D7F /* Pods-ToDue2-resources.sh */,
+				69A959E97955EB83520679CA2E9BA550 /* Pods-ToDue2-umbrella.h */,
+				3680C3E49B942F2B4E50525E4C473454 /* Pods-ToDue2.debug.xcconfig */,
+				03E91F169967BBCD111B8B2F3EFA735E /* Pods-ToDue2.release.xcconfig */,
+			);
+			name = "Pods-ToDue2";
+			path = "Target Support Files/Pods-ToDue2";
+			sourceTree = "<group>";
+		};
+		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				438B396F6B4147076630CAEFE34282C1 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		438B396F6B4147076630CAEFE34282C1 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */,
+				B63C6A64CF66340668996F78DA6BB482 /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
+				A91EC843BA08AE4F89B109A04DF6333E /* Pods */,
+				DE92F047EC66F7785BF4AAC2EB38C83A /* Products */,
+				0F1B081C5BE1A6597511371419A53225 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		98587F5CB786170435652AF994F5CC01 /* Floaty */ = {
+			isa = PBXGroup;
+			children = (
+				78FABC0A154E6DE8D7F88BB7C2EF5A88 /* Floaty.swift */,
+				7D96AD310FC572D70BF938B69B6372A0 /* FloatyDelegate.swift */,
+				D4C9C8BB96D8027C5B74995A0DA7B58F /* FloatyItem.swift */,
+				D020434D8380EDA961C57FD53BC0B42D /* FloatyManager.swift */,
+				059B79EFD6CFD6D63F6A72B5959E4695 /* FloatyViewController.swift */,
+				8DA9A7AC1583E00967173A4456F14A4D /* FloatyWindow.swift */,
+				0E1E773866199CC309956CF9B63C69DE /* Support Files */,
+			);
+			name = Floaty;
+			path = Floaty;
+			sourceTree = "<group>";
+		};
+		A91EC843BA08AE4F89B109A04DF6333E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				98587F5CB786170435652AF994F5CC01 /* Floaty */,
+				C740BE29A2DBA06212F147762CCCE973 /* Magnetic */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		BB959188D482283B08DBB4B9B48B95B2 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				60C8BB1D12C4171982232E21BE35F3F0 /* Info.plist */,
+				89DACD00AE93878511622C3C56C0A007 /* Magnetic.modulemap */,
+				45FB6A225778CCC94B1BEA50E85FC7E5 /* Magnetic.xcconfig */,
+				2CA04EB2F08E994FE513C23341846AC6 /* Magnetic-dummy.m */,
+				9B225208C62812AA89E6C10922E5DD75 /* Magnetic-prefix.pch */,
+				60B1A1A095078B34635E1C35ED6600BC /* Magnetic-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Magnetic";
+			sourceTree = "<group>";
+		};
+		C740BE29A2DBA06212F147762CCCE973 /* Magnetic */ = {
+			isa = PBXGroup;
+			children = (
+				46F8D4B105715A14A0CC0C654EF5FFCC /* Extensions.swift */,
+				7E6333FF0EB029BB2F07FEC64CF68D5B /* Magnetic.swift */,
+				2E34B0E0186BBDE5C19D4B369ADD4F81 /* MagneticView.swift */,
+				400EB2D7EF1EEC36910D3616C3EF5696 /* Node.swift */,
+				A940D19B157BC16FEAE8F0EC95A68FA0 /* SKMultilineLabelNode.swift */,
+				BB959188D482283B08DBB4B9B48B95B2 /* Support Files */,
+			);
+			name = Magnetic;
+			path = Magnetic;
+			sourceTree = "<group>";
+		};
+		DE92F047EC66F7785BF4AAC2EB38C83A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4A34969E817B70465A5E946010D62D6A /* Floaty.framework */,
+				118D724C5954C6AA0FB4F99A714EA151 /* Magnetic.framework */,
+				BFD4BFAEB037531F1CDCF314E38B1CC3 /* Pods_ToDue2.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		8E5E05EFB88617ACF718FFDED868467A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				018E1682A6010C92A210B4CB7A121FDF /* Magnetic-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C8F45C628F1FFC80E146A71DB3F348AB /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5C41A18C5A9C76B193A432CAA5BBC2F4 /* Pods-ToDue2-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC4B55F79F7EDF7665C0699A20731DE3 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7067387FF3974A5BA87F204F718C33F5 /* Floaty-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		5748CBD6628E5BED81C1A3FF982B380B /* Magnetic */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D4F903488F349D9681C97A130594A23D /* Build configuration list for PBXNativeTarget "Magnetic" */;
+			buildPhases = (
+				2D4268DCE1F16FB145FF402298FE56B3 /* Sources */,
+				2574C9F350D56F2E1DBB2F38F791E5AA /* Frameworks */,
+				8E5E05EFB88617ACF718FFDED868467A /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Magnetic;
+			productName = Magnetic;
+			productReference = 118D724C5954C6AA0FB4F99A714EA151 /* Magnetic.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		5C123A74CD9D6CDA27160800BA68B01A /* Floaty */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 11DD83B99F71D3E302573ED38372EA3B /* Build configuration list for PBXNativeTarget "Floaty" */;
+			buildPhases = (
+				58D385880A221FD41E30877A347BC358 /* Sources */,
+				E91D449C74F3A7565170694D645F1052 /* Frameworks */,
+				DC4B55F79F7EDF7665C0699A20731DE3 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Floaty;
+			productName = Floaty;
+			productReference = 4A34969E817B70465A5E946010D62D6A /* Floaty.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		5E6045AF5635AFA296A0070F79EC37AD /* Pods-ToDue2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E01F14BD4C52BD0F4E75679D9F74B04B /* Build configuration list for PBXNativeTarget "Pods-ToDue2" */;
+			buildPhases = (
+				440DF254B3CE0A2F8D9920B9BD92DD30 /* Sources */,
+				34B56CFA05CEC10062E7220F638C2579 /* Frameworks */,
+				C8F45C628F1FFC80E146A71DB3F348AB /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				786A5FF6D6F7C4D27E31039844BDED47 /* PBXTargetDependency */,
+				C62BB324BF1261032F103D1A79FA03B1 /* PBXTargetDependency */,
+			);
+			name = "Pods-ToDue2";
+			productName = "Pods-ToDue2";
+			productReference = BFD4BFAEB037531F1CDCF314E38B1CC3 /* Pods_ToDue2.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = DE92F047EC66F7785BF4AAC2EB38C83A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5C123A74CD9D6CDA27160800BA68B01A /* Floaty */,
+				5748CBD6628E5BED81C1A3FF982B380B /* Magnetic */,
+				5E6045AF5635AFA296A0070F79EC37AD /* Pods-ToDue2 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2D4268DCE1F16FB145FF402298FE56B3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6DE51C7806F321C18C9E0FE0DB0DCABC /* Extensions.swift in Sources */,
+				57EBEC2C89EF1F76A9A9CC3B1533E1E8 /* Magnetic-dummy.m in Sources */,
+				6CB20C105B6D8DB5FA51EBC228C44DBD /* Magnetic.swift in Sources */,
+				F762C77EDE8A9017227183859B0F268A /* MagneticView.swift in Sources */,
+				C4F165BC3C052A909071246584397C5A /* Node.swift in Sources */,
+				48AFB18AC816315252144BDEE627BF46 /* SKMultilineLabelNode.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		440DF254B3CE0A2F8D9920B9BD92DD30 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0BA63FDB18CF101D13CF53F979EE8AC6 /* Pods-ToDue2-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		58D385880A221FD41E30877A347BC358 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1982E7ED9231E948A558799362FEA8B3 /* Floaty-dummy.m in Sources */,
+				0A113A2FC5F91269AB55DF9FA683015F /* Floaty.swift in Sources */,
+				9054A1CA64F47D0BEE3744D146CD26A2 /* FloatyDelegate.swift in Sources */,
+				31DEB9C293D974C0014F52E7853C3E0B /* FloatyItem.swift in Sources */,
+				8E96697B51D3FD3DB5EB1BE3EF02B411 /* FloatyManager.swift in Sources */,
+				F5B4C3EE44C285ACF24E077895435175 /* FloatyViewController.swift in Sources */,
+				530356FC11C4F4A1F641A30F65C5684F /* FloatyWindow.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		786A5FF6D6F7C4D27E31039844BDED47 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Floaty;
+			target = 5C123A74CD9D6CDA27160800BA68B01A /* Floaty */;
+			targetProxy = 3069C29AA4C008751FF9ADBAC02B010F /* PBXContainerItemProxy */;
+		};
+		C62BB324BF1261032F103D1A79FA03B1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Magnetic;
+			target = 5748CBD6628E5BED81C1A3FF982B380B /* Magnetic */;
+			targetProxy = A8921B252653E7A3CAC276513DC3E3BE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		170AB5C761177C756E452871F5948FD9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E3262DC143D164698A79D22D046E0096 /* Floaty.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Floaty/Floaty-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Floaty/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Floaty/Floaty.modulemap";
+				PRODUCT_NAME = Floaty;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		4C29DBCE921C61C3E9D588EE6F2A786C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E3262DC143D164698A79D22D046E0096 /* Floaty.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Floaty/Floaty-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Floaty/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Floaty/Floaty.modulemap";
+				PRODUCT_NAME = Floaty;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		6E0F75C7D4CED4EA8632145381AC02FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 03E91F169967BBCD111B8B2F3EFA735E /* Pods-ToDue2.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-ToDue2/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ToDue2/Pods-ToDue2.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_ToDue2;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		9BFBC23BB90F0FD0E5B34A8E494139F0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 45FB6A225778CCC94B1BEA50E85FC7E5 /* Magnetic.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Magnetic/Magnetic-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Magnetic/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Magnetic/Magnetic.modulemap";
+				PRODUCT_NAME = Magnetic;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A20B0BDFC4838E55DCAD094ED2792393 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		AA8DE137DCE42A372DEA5905914BD993 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 45FB6A225778CCC94B1BEA50E85FC7E5 /* Magnetic.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Magnetic/Magnetic-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Magnetic/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Magnetic/Magnetic.modulemap";
+				PRODUCT_NAME = Magnetic;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		B49DFA0BA72499011F0F3F568F7EB690 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3680C3E49B942F2B4E50525E4C473454 /* Pods-ToDue2.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-ToDue2/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ToDue2/Pods-ToDue2.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_ToDue2;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B53EDD60891CA0A99618C4BA3DEEBB79 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		11DD83B99F71D3E302573ED38372EA3B /* Build configuration list for PBXNativeTarget "Floaty" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				170AB5C761177C756E452871F5948FD9 /* Debug */,
+				4C29DBCE921C61C3E9D588EE6F2A786C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B53EDD60891CA0A99618C4BA3DEEBB79 /* Debug */,
+				A20B0BDFC4838E55DCAD094ED2792393 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D4F903488F349D9681C97A130594A23D /* Build configuration list for PBXNativeTarget "Magnetic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9BFBC23BB90F0FD0E5B34A8E494139F0 /* Debug */,
+				AA8DE137DCE42A372DEA5905914BD993 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E01F14BD4C52BD0F4E75679D9F74B04B /* Build configuration list for PBXNativeTarget "Pods-ToDue2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B49DFA0BA72499011F0F3F568F7EB690 /* Debug */,
+				6E0F75C7D4CED4EA8632145381AC02FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

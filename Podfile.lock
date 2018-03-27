@@ -1,0 +1,15 @@
+PODS:
+  - Floaty (4.0.0)
+  - Magnetic (2.0.5)
+
+DEPENDENCIES:
+  - Floaty (~> 4.0.0)
+  - Magnetic
+
+SPEC CHECKSUMS:
+  Floaty: 4f88811bbf08521807f42355db6a9c0db85d5d78
+  Magnetic: 5afeb4c6187413f2902c541136ee877f5296691e
+
+PODFILE CHECKSUM: 55e31d0532ae96c22f50afdad8e616878240c7ca
+
+COCOAPODS: 1.4.0

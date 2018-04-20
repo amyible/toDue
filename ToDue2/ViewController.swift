@@ -29,6 +29,7 @@ class ViewController: UIViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
+        self.navigationController?.navigationBar.isHidden = true;
         
         for _ in 0..<6 {
             add(nil)
@@ -89,7 +90,7 @@ class ViewController: UIViewController {
             let deadline = datePicker.date
             let notes = alertController.textFields?[1].text
             let color = UIColor.colors.randomItem()
-            print("priority is \(priority), deadline is \(deadline), notes are \(notes)")
+            print("priority is \(priority), deadline is \(deadline), notes are \(notes ?? "")")
             let node = Node(text: name?.uppercased(), image: UIImage(named: UIImage.images.randomItem()), color: color, radius: CGFloat(priority))
             self.magnetic.addChild(node)
             

@@ -16,7 +16,7 @@ open class Node: MaskNode {
         label.fontSize = 13
         label.fontColor = .white
         label.verticalAlignmentMode = .center
-        label.width = 2 * self.frame.width / 3
+        label.width = 1 * self.frame.width / 2
         label.separator = " "
         self.mask.addChild(label)
         return label
@@ -161,12 +161,11 @@ open class Node: MaskNode {
      The animation to execute when the node is removed.
      
      - important: You must call the completion block.
-     
      - parameter completion: The block to execute when the animation is complete. You must call this handler and should do so as soon as possible.
      */
     
     open func removedAnimation(completion: @escaping () -> Void) {
-        if (self.size > 20) {
+        if (self.size > 40) {
             let c = ((self.radius - self.size)/10) + 1
             run(.scale(to: 1-(10*c/self.radius), duration: 0.2))
             self.size = self.size - 10;

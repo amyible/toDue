@@ -116,7 +116,7 @@ class ViewController: UIViewController {
             //getting the input values from user
             let name = alertController.textFields?[0].text
             let duration = alertController.textFields?[1].text
-            let priority = 40;
+            let priority = 80;
             let deadline = datePicker.date;
             let notes = alertController.textFields?[1].text;
             let color = UIColor.colors.randomItem()
@@ -276,7 +276,6 @@ class ViewController: UIViewController {
 
 // MARK: - MagneticDelegate
 extension ViewController: MagneticDelegate {
-    
     func magnetic(_ magnetic: Magnetic, didSelect node: Node) {
         print("didSelect -> \(node)")
     }
@@ -285,6 +284,9 @@ extension ViewController: MagneticDelegate {
         print("didDeselect -> \(node)")
     }
     
+    func madeProgress(score: Int?) {
+        scoreLabel.text = (Int(scoreLabel.text!)! + score!).description
+    }
 }
 
 // MARK: - ImageNode

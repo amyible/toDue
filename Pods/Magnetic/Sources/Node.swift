@@ -136,6 +136,10 @@ open class Node: MaskNode {
         }
     }
     
+    open func getSize() -> CGFloat {
+        return self.size;
+    }
+    
     /**
      The animation to execute when the node is selected.
      */
@@ -168,7 +172,6 @@ open class Node: MaskNode {
             let c = ((self.radius - self.size)/10) + 1
             run(.scale(to: 1-(10*c/self.radius), duration: 0.2))
             self.size = self.size - 10;
-            print(self.size)
         }
         else {
             let sound = SKAction.playSoundFileNamed("pop.mp3", waitForCompletion: true)

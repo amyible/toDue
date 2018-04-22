@@ -333,7 +333,7 @@
                     <nil key="simulatedStatusBarMetrics"/>
                     <connections>
                         <outlet property="magneticView" destination="ban-xb-aQB" id="Tlh-Ig-Mpq"/>
-                        <outlet property="scoreLabel" destination="IlX-E2-jB9" id="aky-sl-kVO"/>
+                        <outlet property="scoreLabel" destination="IlX-E2-jB9" id="HZq-rM-Gwr"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

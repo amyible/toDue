@@ -11,6 +11,7 @@ import SpriteKit
 public protocol MagneticDelegate: class {
     func magnetic(_ magnetic: Magnetic, didSelect node: Node)
     func magnetic(_ magnetic: Magnetic, didDeselect node: Node)
+    func madeProgress(score: Int?)
 }
 
 open class Magnetic: SKScene, UIGestureRecognizerDelegate {
@@ -113,9 +114,11 @@ open class Magnetic: SKScene, UIGestureRecognizerDelegate {
         let touchPos = self.convertPoint(fromView:touchPosinView )
         if sender.state == .began {
             for child in self.children {
-                if let shapeNode = child as? SKShapeNode {
+                if let shapeNode = child as? Node {
                     if shapeNode.contains(touchPos) {
+                        let score = shapeNode.getSize() > 40 ? 10 : 40
                         shapeNode.removeFromParent()
+                        magneticDelegate?.madeProgress(score:score)
                     }
                 }
             }

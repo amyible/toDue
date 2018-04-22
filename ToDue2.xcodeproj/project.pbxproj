@@ -19,6 +19,9 @@
 		CCCA2AAF207863D900CF2EDF /* LoginService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCCA2AAE207863D900CF2EDF /* LoginService.swift */; };
 		CCCA2AB12078644000CF2EDF /* ConnectionSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCCA2AB02078644000CF2EDF /* ConnectionSettings.swift */; };
 		CCD1836020892613002C0058 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCD1835F20892613002C0058 /* RegisterViewController.swift */; };
+		CCF91F1F208AE43C00F166D8 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCF91F1E208AE43C00F166D8 /* DetailViewController.swift */; };
+		CCF91F21208AFAAA00F166D8 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCF91F20208AFAAA00F166D8 /* ListViewController.swift */; };
+		CCF91F25208AFC8C00F166D8 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCF91F24208AFC8C00F166D8 /* Task.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +39,9 @@
 		CCCA2AAE207863D900CF2EDF /* LoginService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginService.swift; sourceTree = "<group>"; };
 		CCCA2AB02078644000CF2EDF /* ConnectionSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionSettings.swift; sourceTree = "<group>"; };
 		CCD1835F20892613002C0058 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		CCF91F1E208AE43C00F166D8 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		CCF91F20208AFAAA00F166D8 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		CCF91F24208AFC8C00F166D8 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
 		D87491E5356CB5B6A6A3ACA5 /* Pods-ToDue2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ToDue2.release.xcconfig"; path = "Pods/Target Support Files/Pods-ToDue2/Pods-ToDue2.release.xcconfig"; sourceTree = "<group>"; };
 		DDE570F446C28CE001DAFBB3 /* Pods-ToDue2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ToDue2.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ToDue2/Pods-ToDue2.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -97,6 +103,9 @@
 				CCCA2AAE207863D900CF2EDF /* LoginService.swift */,
 				CCCA2AB02078644000CF2EDF /* ConnectionSettings.swift */,
 				CCD1835F20892613002C0058 /* RegisterViewController.swift */,
+				CCF91F1E208AE43C00F166D8 /* DetailViewController.swift */,
+				CCF91F20208AFAAA00F166D8 /* ListViewController.swift */,
+				CCF91F24208AFC8C00F166D8 /* Task.swift */,
 				CC2AC22F2068B7B300C9DE7D /* Main.storyboard */,
 				CC2AC2322068B7B400C9DE7D /* Assets.xcassets */,
 				CC2AC2342068B7B400C9DE7D /* LaunchScreen.storyboard */,
@@ -249,9 +258,12 @@
 				CC2AC22E2068B7B300C9DE7D /* ViewController.swift in Sources */,
 				CCD1836020892613002C0058 /* RegisterViewController.swift in Sources */,
 				CCCA2AB12078644000CF2EDF /* ConnectionSettings.swift in Sources */,
+				CCF91F25208AFC8C00F166D8 /* Task.swift in Sources */,
 				CCCA2AAF207863D900CF2EDF /* LoginService.swift in Sources */,
+				CCF91F21208AFAAA00F166D8 /* ListViewController.swift in Sources */,
 				CC2AC24C2068B8B600C9DE7D /* Extensions.swift in Sources */,
 				CC2AC22C2068B7B300C9DE7D /* AppDelegate.swift in Sources */,
+				CCF91F1F208AE43C00F166D8 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

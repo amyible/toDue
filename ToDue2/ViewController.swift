@@ -11,6 +11,10 @@ import Magnetic
 import Floaty
 
 class ViewController: UIViewController {
+
+    @IBOutlet weak var scoreLabel: UILabel!
+    @IBAction func showListView(_ sender: UIButton) {
+    }
     
     @IBOutlet weak var magneticView: MagneticView! {
         didSet {
@@ -22,23 +26,30 @@ class ViewController: UIViewController {
 //            #endif
         }
     }
-    
     var magnetic: Magnetic {
         return magneticView.magnetic
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        self.navigationController?.setNavigationBarHidden(true, animated: animated)
+        super.viewWillAppear(animated)
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        self.navigationController?.setNavigationBarHidden(false, animated: animated)
+        super.viewWillDisappear(animated)
+    }
+    
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        self.navigationController?.navigationBar.isHidden = true;
+        //self.navigationController?.navigationBar.isHidden = true;
         
         for _ in 0..<6 {
             add(nil)
         }
         let floaty = Floaty()
         floaty.addItem("New Periodic Task", icon: UIImage(named: "Image")!, handler: { item in
-            let alert = UIAlertController(title: "Hey", message: "This is for recurring tasks", preferredStyle: .alert)
-            alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
-            self.present(alert, animated: true, completion: nil)
+            self.showInputDialog2()
         })
         floaty.addItem("New Single Task", icon: UIImage(named: "Image")!, handler: { item in
            self.showInputDialog()
@@ -46,51 +57,71 @@ class ViewController: UIViewController {
         self.view.addSubview(floaty)
     }
     
+    @objc func checkBoxAction(_ sender: UIButton)
+    {
+        if sender.isSelected
+        {
+            sender.isSelected = false
+            let btnImage    = UIImage(named: "unCheckBoxImage")!
+            sender.setBackgroundImage(btnImage, for: UIControlState())
+        }else {
+            sender.isSelected = true
+            let btnImage    = UIImage(named: "checkBoxImage")!
+            sender.setBackgroundImage(btnImage, for: UIControlState())
+        }
+    }
+    
     func showInputDialog() {
-        //Creating UIAlertController and
-        //Setting title and message for the alert dialog
-        let alertController = UIAlertController(title: "Create New Task", message: "Slide to assign task priority\n\n\n\n\n\n\n\n\n\n\n\n", preferredStyle: .alert)
-
-        //get the Slider values from UserDefaults
-        // let defaultSliderValue = UserDefaults.standard.float(forKey: "sliderValue")
-        
-        //create a Slider and fit within the extra message spaces
-        //add the Slider to a Subview of the sliderAlert
-        let slider = UISlider(frame:CGRect(x: 20, y: 50, width: 230, height: 80))
-        slider.minimumValue = 20
-        slider.maximumValue = 120
-        // slider.value = defaultSliderValue
-        slider.isContinuous = true
-        slider.tintColor = UIColor.blue
-//        slider.minimumValueImage = UIImage(named: "Snow")
-//        slider.maximumValueImage = UIImage(named: "Fire")!
-        alertController.view.addSubview(slider)
+        //Creating UIAlertController
+        let alertController = UIAlertController(title: "Create New Task", message: "Enter task details\n\n\n\n\n\n\n\n\n\n\n\n", preferredStyle: .alert)
         
         //adding textfields to our dialog box
         alertController.addTextField { (textField) in
             textField.placeholder = "Enter Task Name"
         }
+        alertController.addTextField { (textField) in
+            textField.placeholder = "Enter Estimated Duration (Hours) - Example: 1.5"
+        }
+        alertController.addTextField { (textField) in
+            textField.placeholder = "Additional Notes"
+        }
         
-        let datePicker = UIDatePicker(frame:CGRect(x: 10, y: 110, width: 240, height: 160))
-        datePicker.minuteInterval = 15
+        //task deadline and importance
+        let label = UILabel(frame: CGRect(x: 35, y: 95, width: 210, height: 20));
+        label.text = "Select task deadline (skip if N/A)";
+        label.font = UIFont(name: "GillSans-Light",
+                            size: 16.0)
+        alertController.view.addSubview(label);
+        
+        let label1 = UILabel(frame: CGRect(x: 35, y: 70, width: 200, height: 20));
+        label1.text = "Flag This Task as Important";
+        label1.font = UIFont(name: "GillSans-Light",
+                             size: 16.0)
+        alertController.view.addSubview(label1);
+        
+        let btnImage    = UIImage(named: "unCheckBoxImage")!
+        let imageButton : UIButton = UIButton(frame: CGRect(x: 220, y: 70, width: 20, height: 20))
+        imageButton.setBackgroundImage(btnImage, for: UIControlState())
+        imageButton.addTarget(self, action: #selector(ViewController.checkBoxAction(_:)), for: .touchUpInside)
+        alertController.view.addSubview(imageButton)
+
+        let datePicker = UIDatePicker(frame:CGRect(x: 10, y: 109, width: 240, height: 150))
+        datePicker.minuteInterval = 15;
+        datePicker.minimumDate = NSDate() as Date?;
         alertController.view.addSubview(datePicker)
-        
-        //OK button action
-        //        let sliderAction = UIAlertAction(title: "OK", style: .default, handler: { (result : UIAlertAction) -> Void in
-        //            UserDefaults.standard.set(slider.value, forKey: "sliderValue")
-        //        })
         
         //the confirm action taking the inputs
         let confirmAction = UIAlertAction(title: "Enter", style: .default) { (_) in
             
             //getting the input values from user
             let name = alertController.textFields?[0].text
-            //let priority = alertController.textFields?[1].text
-            let priority = slider.value
-            let deadline = datePicker.date
-            let notes = alertController.textFields?[1].text
+            let duration = alertController.textFields?[1].text
+            let priority = 40;
+            let deadline = datePicker.date;
+            let notes = alertController.textFields?[1].text;
             let color = UIColor.colors.randomItem()
-            print("priority is \(priority), deadline is \(deadline), notes are \(notes ?? "")")
+            // **** CALL TO BACKEND **** //
+            //print("priority is \(priority), deadline is \(deadline), notes are \(notes ?? "")")
             let node = Node(text: name?.uppercased(), image: UIImage(named: UIImage.images.randomItem()), color: color, radius: CGFloat(priority))
             self.magnetic.addChild(node)
             
@@ -99,10 +130,92 @@ class ViewController: UIViewController {
         //the cancel action doing nothing
         let cancelAction = UIAlertAction(title: "Cancel", style: .destructive) { (_) in }
         
+        //adding the action to dialogbox
+        alertController.addAction(confirmAction)
+        alertController.addAction(cancelAction)
         
+        //finally presenting the dialog box
+        self.present(alertController, animated: true, completion: nil)
+    }
+    
+    func showInputDialog2() {
+        //Creating UIAlertController
+        let alertController = UIAlertController(title: "Create New Task", message: "Enter task details\n\n\n\n\n\n\n\n\n\n\n\n", preferredStyle: .alert)
+        
+        //adding textfields to our dialog box
+        alertController.addTextField { (textField) in
+            textField.placeholder = "Enter Task Name"
+        }
+        alertController.addTextField { (textField) in
+            textField.placeholder = "Enter Estimated Duration (Hours) - Example: 1.5"
+        }
         alertController.addTextField { (textField) in
             textField.placeholder = "Additional Notes"
         }
+        
+        //task deadline and importance
+        let label = UILabel(frame: CGRect(x: 35, y: 95, width: 210, height: 20));
+        label.text = "Select task deadline (skip if N/A)";
+        label.font = UIFont(name: "GillSans-Light",
+                            size: 16.0)
+        alertController.view.addSubview(label);
+        
+        let label1 = UILabel(frame: CGRect(x: 35, y: 70, width: 200, height: 20));
+        label1.text = "Flag This Task as Important";
+        label1.font = UIFont(name: "GillSans-Light",
+                             size: 16.0)
+        alertController.view.addSubview(label1);
+        
+        let btnImage    = UIImage(named: "unCheckBoxImage")!
+        let imageButton : UIButton = UIButton(frame: CGRect(x: 220, y: 70, width: 20, height: 20))
+        imageButton.setBackgroundImage(btnImage, for: UIControlState())
+        imageButton.addTarget(self, action: #selector(ViewController.checkBoxAction(_:)), for: .touchUpInside)
+        alertController.view.addSubview(imageButton)
+        
+        let datePicker = UIDatePicker(frame:CGRect(x: 10, y: 109, width: 240, height: 150))
+        datePicker.minuteInterval = 15;
+        datePicker.minimumDate = NSDate() as Date?;
+        alertController.view.addSubview(datePicker)
+        
+        let label2 = UILabel(frame: CGRect(x: 23, y: 250, width: 200, height: 20));
+        label2.text = "Recurs:     weekly ";
+        label2.font = UIFont(name: "GillSans-Light",
+                             size: 16.0)
+        alertController.view.addSubview(label2);
+        let label3 = UILabel(frame: CGRect(x: 172, y: 250, width: 200, height: 20));
+        label3.text = "monthly ";
+        label3.font = UIFont(name: "GillSans-Light",
+                             size: 16.0)
+        alertController.view.addSubview(label3);
+        
+        let imageButton1 : UIButton = UIButton(frame: CGRect(x: 138, y: 250, width: 20, height: 20))
+        let imageButton2 : UIButton = UIButton(frame: CGRect(x: 228, y: 250, width: 20, height: 20))
+        imageButton1.setBackgroundImage(btnImage, for: UIControlState())
+        imageButton2.setBackgroundImage(btnImage, for: UIControlState())
+        imageButton1.addTarget(self, action: #selector(ViewController.checkBoxAction(_:)), for: .touchUpInside)
+        imageButton2.addTarget(self, action: #selector(ViewController.checkBoxAction(_:)), for: .touchUpInside)
+        alertController.view.addSubview(imageButton1)
+        alertController.view.addSubview(imageButton2)
+        
+        //the confirm action taking the inputs
+        let confirmAction = UIAlertAction(title: "Enter", style: .default) { (_) in
+            
+            //getting the input values from user
+            let name = alertController.textFields?[0].text
+            let duration = alertController.textFields?[1].text
+            let priority = 40;
+            let deadline = datePicker.date;
+            let notes = alertController.textFields?[1].text;
+            let color = UIColor.colors.randomItem()
+            // **** CALL TO BACKEND **** //
+            //print("priority is \(priority), deadline is \(deadline), notes are \(notes ?? "")")
+            let node = Node(text: name?.uppercased(), image: UIImage(named: UIImage.images.randomItem()), color: color, radius: CGFloat(priority))
+            self.magnetic.addChild(node)
+            
+        }
+        
+        //the cancel action doing nothing
+        let cancelAction = UIAlertAction(title: "Cancel", style: .destructive) { (_) in }
         
         //adding the action to dialogbox
         alertController.addAction(confirmAction)
@@ -157,6 +270,7 @@ class ViewController: UIViewController {
             magnetic.physicsWorld.speed = speed
         }
     }*/
+    
     
 }
 

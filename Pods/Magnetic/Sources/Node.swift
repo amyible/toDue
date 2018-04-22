@@ -16,7 +16,7 @@ open class Node: MaskNode {
         label.fontSize = 13
         label.fontColor = .white
         label.verticalAlignmentMode = .center
-        label.width = 1 * self.frame.width / 2
+        label.width = 1 * self.frame.width / 3
         label.separator = " "
         self.mask.addChild(label)
         return label
@@ -77,7 +77,6 @@ open class Node: MaskNode {
         didSet {
             guard isSelected != oldValue else { return }
             if isSelected {
-                //removeFromParent()
                 selectedAnimation()
             } else {
                 deselectedAnimation()

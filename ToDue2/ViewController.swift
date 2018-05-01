@@ -122,8 +122,14 @@ class ViewController: UIViewController {
             let color = UIColor.colors.randomItem()
             // **** CALL TO BACKEND **** //
             //print("priority is \(priority), deadline is \(deadline), notes are \(notes ?? "")")
-            let node = Node(text: name?.uppercased(), image: UIImage(named: UIImage.images.randomItem()), color: color, radius: CGFloat(priority))
+            let node = Node(text: name?.uppercased(), image: UIImage(named: UIImage.images.randomItem()), color: UIColor.red, radius: CGFloat(priority))
+            let node2 = Node(text: "CLEAN ROOM", image: UIImage(named: UIImage.images.randomItem()), color: UIColor.green, radius: CGFloat(60))
+            let node3 = Node(text: "BUY MOM GIFT", image: UIImage(named: UIImage.images.randomItem()), color: UIColor.orange, radius: CGFloat(70))
+            let node4 = Node(text: "OIL CHANGE", image: UIImage(named: UIImage.images.randomItem()), color: UIColor.magenta, radius: CGFloat(50))
             self.magnetic.addChild(node)
+            self.magnetic.addChild(node2)
+            self.magnetic.addChild(node3)
+            self.magnetic.addChild(node4)
             
         }
         

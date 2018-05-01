@@ -11,7 +11,7 @@ import os.log
 
 class ListViewController: UITableViewController {
     //MARK: Properties
-    var tasks = [Task(name: "Get dog", duration: 1.5, deadline: NSDate() as Date, important: false, notes: "Hi hihi"), Task(name: "Get cat", duration: 2.5, deadline: NSDate() as Date, important: true, notes: "Hi hihi")]
+    var tasks = [Task(name: "Pick up flowers", duration: 1.5, deadline: NSDate() as Date, important: false, notes: "Hi hihi"), Task(name: "Visit Annie", duration: 2.5, deadline: NSDate() as Date, important: true, notes: "Bring cookies in pantry (peanut allergy!!)")]
     
     override func viewDidLoad() {
         super.viewDidLoad()

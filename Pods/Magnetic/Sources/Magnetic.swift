@@ -9,8 +9,8 @@
 import SpriteKit
 
 public protocol MagneticDelegate: class {
-    func magnetic(_ magnetic: Magnetic, didSelect node: Node)
-    func magnetic(_ magnetic: Magnetic, didDeselect node: Node)
+    func magnetic(_ magnetic: Magnetic, didSelect node: Node, name: String)
+    func magnetic(_ magnetic: Magnetic, didDeselect node: Node, name: String)
     func madeProgress(score: Int?)
 }
 
@@ -160,14 +160,14 @@ extension Magnetic {
         {
             if node.isSelected {
                 node.isSelected = false
-                magneticDelegate?.magnetic(self, didDeselect: node)
+                magneticDelegate?.magnetic(self, didDeselect: node, name: "Hi")
             } else {
                 if !allowsMultipleSelection, let selectedNode = selectedChildren.first {
                     selectedNode.isSelected = false
-                    magneticDelegate?.magnetic(self, didDeselect: selectedNode)
+                    magneticDelegate?.magnetic(self, didDeselect: selectedNode, name: "Hi")
                 }
                 node.isSelected = true
-                magneticDelegate?.magnetic(self, didSelect: node)
+                magneticDelegate?.magnetic(self, didSelect: node, name: node.text!)
             }
         }
         isDragging = false

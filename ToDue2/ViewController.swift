@@ -29,6 +29,7 @@ class ViewController: UIViewController {
     var magnetic: Magnetic {
         return magneticView.magnetic
     }
+    var task: String?
     
     override func viewWillAppear(_ animated: Bool) {
         self.navigationController?.setNavigationBarHidden(true, animated: animated)
@@ -277,16 +278,26 @@ class ViewController: UIViewController {
         }
     }*/
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        var destinationViewController = segue.destination as! ModalViewController
+            destinationViewController.name = task
+        
+        
+    }
+    
     
 }
 
 // MARK: - MagneticDelegate
 extension ViewController: MagneticDelegate {
-    func magnetic(_ magnetic: Magnetic, didSelect node: Node) {
-        print("didSelect -> \(node)")
+    
+    func magnetic(_ magnetic: Magnetic, didSelect node: Node, name: String) {
+        task = name
+        print("didSelect -> \(name)")
+        performSegue(withIdentifier: "OpenModal", sender: self)
     }
     
-    func magnetic(_ magnetic: Magnetic, didDeselect node: Node) {
+    func magnetic(_ magnetic: Magnetic, didDeselect node: Node, name: String) {
         print("didDeselect -> \(node)")
     }
     
